@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+import pandas
 
 st.title("Pokédex")
 
@@ -25,4 +26,3 @@ if pokemon_name:
         st.text(f"Útok: {stats['attack']} ⚔️")
         st.text(f"Obrana: {stats['defense']} 🛡️")
         st.text(f"Rychlost: {stats['speed']} 🏃")
-
